@@ -127,3 +127,29 @@ There are two type of variable in coding world:
 
 
 ## Variable Memory Management 
+
+![Memory Allocation](images/Memory_allocation.png)
+
+- From memory point of view , a variable is a name block that refers to another block where value is actually stored.
+- in short, a variable is reference to a value. 
+- int/float/str/bool values are immutable (unmodifiable) because they may be shared to multiple references.
+![memory Sharing](images/memory_sharing.png)
+- if you modify these values , a different memory block is allocated.
+![new memory allocated](<images/new memory making.png>)
+
+### id() Function: 
+- > id() function returns address of a value
+
+``` 
+address = id(value)
+        or
+address = id(variable) # returns address of value referd by variable.
+```
+![variable management code](<images/var management code.png>)
+![variable management output](<images/var management output.png>)
+> Note: <br>
+```
+ If you never want to modify a variable then you should write in caps like:
+DOB =2000
+```
+![Constant](<images/constant .png>)

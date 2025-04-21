@@ -95,3 +95,127 @@ exp:
         print(avg)
         print(s)
 ```
+## 3. Comparision / Relational Operators:
+
+- return boolean Result (True / False)
+
+1. equal comparision (==)
+2. not equal comparison (!= )
+3. Greater Comparison (>)
+4. Less comparison (<)
+5. Greater or equal comparison (>=)
+6. Lesser or equal comparison (<=)
+
+![code](images/Asop1.png)
+![output](images/asopO.png)
+
+## 4. Logical Operator :
+
+- return boolean result (True/ False)
+- Generally, we use logical operators to combine results of multiple comparisions.
+- Represented by following keywords: 
+
+a. Logical AND (and) <br>
+b. Logical OR (or)  <br>
+c. Logical NOT (not) <br>
+
+### Truth Table for (and):
+- True and True == True
+- True and False == False
+- False and False == False
+- False and True == False
+
+### Truth table for (or):
+
+- True or True == True
+- True or False == True
+- False or False == Flase
+- False or True == True
+
+### Truth table for (not): 
+
+- not Truth == False
+- not False == Truth
+
+Example : 
+![code](images/Logical1.png)
+![output](images/Logicaloutput.png)
+
+## 4 .Bitwise Operators : 
+
+- works with bits of int values.
+- return int result.
+
+a. Bitwise and (&) {mpercent} <br>
+b. Bitwise or (|) {pipe} <br>
+c. Bitwise xor (^) {exclusie or} <br>
+d. Bitwise leftshigt (<<)<br>
+e. Bitwise rightshift(>>)<br>
+etc.
+
+### Truth table for  bitwise and(&)
+
+- 1&1 == 1
+- 1&0 == 0
+- 0&1 == 0
+- 0&0 == 0 
+
+### Truth table for bitwise or (||)
+
+- 1 || 1 == 1
+- 1 || 0 == 1
+- 0 || 0 == 0
+- 0 || 1 == 1
+
+### Truth table for bitwise xor(^):
+
+- 1 ^ 1 == 0
+- 1 ^ 0 == 1
+- 0 ^ 0 == 1
+- 0 ^ 1 == 0
+
+### Bitwise leftshift : 
+
+a << b ==> shifts bits of a by b times to left.<br>
+trick => a will double in 1 left shift.
+
+### Bitwise rightshift:
+a>>b ==> shift bits of a by b timesa to right.<br>
+trick ==> a will be floor divided by 2 in right shift.
+
+![CODE](<images/bitwise code.png>)
+![output](<images/bitwise output.png>)
+### Application of bitwise operators:
+
+- Signal processing (embedded system, IOT programming)
+- set operations (union, intersection etc)
+- numpy , pandas lib. etc.
+
+
+## 5. Del operator :
+- It is used to free the memory of a variable and make this variable unusavle in further statements of programs.
+
+- syntax :
+` del variable_name `
+
+- example : 
+```
+a = 10 
+print(a)
+del (a)
+print(a)  # Throw an error
+```
+> Note:  We can not use del with literals.<br>
+Example:  del 10    # throw error
+
+## 6. Ternary operator: 
+- It is also known as conditional operator.
+- It is defined using if else statement in a single statement.
+- syntax: <br>
+
+` true_expression if bool_expression else false_expression`
+
+Example : 
+
+![code](<images/ternery code.png>)
+![output](<images/ternary output.png>)
